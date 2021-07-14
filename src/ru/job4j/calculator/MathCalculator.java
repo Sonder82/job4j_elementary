@@ -22,8 +22,9 @@ public class MathCalculator {
     public static void main(String[] args) {
         double a = MathCalculator.sumAndMultiply(10, 20);
         double b = MathCalculator.subAndDivision(10, 20);
-        System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
-        System.out.println("Результат расчета равен: " + subAndDivision(10, 20));
-        System.out.println("Результат расчета равен: " + sumCalculation(10, 20));
+        double result = MathCalculator.sumCalculation(a, b);
+        System.out.println("Результат расчета равен: " + a);
+        System.out.println("Результат расчета равен: " + b);
+        System.out.println("Результат расчета равен: " + result);
     }
 }
