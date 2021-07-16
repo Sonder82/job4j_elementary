@@ -14,10 +14,8 @@ public class MathCalculator {
     }
 
     public static double sumCalculation(double first, double second, double third, double fourth) {
-        return sum(first, second)
-                + multiply(first, second)
-                + sub(third, fourth)
-                + division(third, fourth);
+        return sumAndMultiply(first, second)
+                + subAndDivision(third, fourth);
     }
 
     public static void main(String[] args) {
