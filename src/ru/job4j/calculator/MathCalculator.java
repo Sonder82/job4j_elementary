@@ -13,16 +13,16 @@ public class MathCalculator {
                 + division(third, fourth);
     }
 
-    public static double sumCalculation(double a, double b) {
-        return a + b;
-
+    public static double sumCalculation(double first, double second, double third, double fourth) {
+        return sum(first, second)
+                + multiply(first, second)
+                + sub(third, fourth)
+                + division(third, fourth);
     }
 
     public static void main(String[] args) {
-        double a = MathCalculator.sumAndMultiply(10, 20);
-        double b = MathCalculator.subAndDivision(10, 20);
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
         System.out.println("Результат расчета равен: " + subAndDivision(10, 20));
-        System.out.println("Результат расчета равен: " + sumCalculation(a, b));
+        System.out.println("Результат расчета равен: " + sumCalculation(10, 20, 10, 20));
     }
 }
