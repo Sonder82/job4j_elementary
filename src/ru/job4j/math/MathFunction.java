@@ -10,11 +10,11 @@ public class MathFunction {
         return first * second;
     }
 
-    public static double sub(double first, double second) {
-        return first - second;
+    public static double sub(double third, double fourth) {
+        return third - fourth;
     }
 
-    public static double division(double first, double second) {
-        return first / second;
+    public static double division(double third, double fourth) {
+        return third / fourth;
     }
 }
