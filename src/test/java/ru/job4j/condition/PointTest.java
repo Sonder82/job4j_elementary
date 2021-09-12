@@ -33,11 +33,20 @@ public class PointTest {
     }
 
     @Test
-    public void when40to25then2() {
-        double expected = 5.38;
-        Point a = new Point(4, 0);
-        Point b = new Point(2, 5);
-        double out = a.distance(b);
+    public void when001to002then3() {
+        double expected = 2.23;
+        Point a = new Point(0, 0, 1);
+        Point b = new Point(0, 2, 2);
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void when081to042then3() {
+        double expected = 4.12;
+        Point a = new Point(0, 8, 1);
+        Point b = new Point(0, 4, 2);
+        double out = a.distance3d(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
