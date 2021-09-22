@@ -11,25 +11,22 @@ public class Library {
         books[1] = bookTwo;
         books[2] = bookThree;
         books[3] = bookFour;
-        for (int index = 0; index < books.length; index++) {
-            Book pr = books[index];
+        for (Book pr : books) {
             System.out.println("Book " + pr.getName() + " has " + pr.getCountPages() + " pages ");
         }
         System.out.println("Change bookOne with bookFour");
         Book temp = books[0];
         books[0] = books[3];
         books[3] = temp;
-        for (int index = 0; index < books.length; index++) {
-            Book pr = books[index];
+        for (Book pr : books) {
             System.out.println("Book " + pr.getName() + " has " + pr.getCountPages() + " pages ");
         }
-        for (int index = 0; index < books.length; index++) {
-            if (books[index] == bookOne) {
-                Book book = books[index];
-                System.out.println("Название книги в поиске : " + book.getName());
+        for (Book value : books) {
+            if ("Clean Code".equals(value.getName())) {
+                System.out.println("Название книги в поиске : " + value.getName());
             }
 
-            }
+        }
         }
 
     }
