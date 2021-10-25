@@ -8,10 +8,10 @@ public class Fact {
 
     public int calc(int n) {
         if (n < 0) {
-            throw new IllegalArgumentException("n should be more than zero.");
+            throw new IllegalArgumentException("n shouldn't be less than zero.");
         }
         int rsl = 1;
-        for (int index = 1; index <= n; index++) {
+        for (int index = 2; index <= n; index++) {
             rsl *= index;
         }
         return rsl;
